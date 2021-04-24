@@ -1,0 +1,41 @@
+// BASIC
+/* primary color */
+$red-cl:#e21d2a;
+$red-cl-dark:#bc0814;
+
+/* global bg color */
+$body-bg-cl: #fff;
+$gray-bg-cl: #fafafa;
+
+$text-cl: #111111;
+
+// TIME TRANSITION
+$t: 0.3s;
+
+// FONT FAMILY 
+$font-family: 'Open Sans', sans-serif;
+
+// GRID - media queries breakpoints
+$xss-min: 420px;
+$xs-min: 576px;
+$sm-min: 768px;
+$md-min: 992px;
+$lg-min: 1200px;
+
+$xss-max: ($xss-min  -1);
+$xs-max: ($xs-min - 1);
+$sm-max: ($sm-min - 1);
+$md-max: ($md-min - 1);
+$lg-max: ($lg-min -1);
+
+// HEADING - typography
+$fz-text: 16px;
+$fz-body: 14px;
+$lh-text: 24px;
+$lh-body: 24px;
+$font-size-h1: 2em;
+$font-size-h2: 1.8em;
+$font-size-h3: 1.4em;
+$font-size-h4: 1.2em;
+$font-size-h5: 1em;
+$font-size-h6: .875em;
