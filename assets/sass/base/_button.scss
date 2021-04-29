@@ -1,0 +1,17 @@
+.btn{
+    &-white{
+        background: $bg-cl-white;
+        border: 1px solid $bg-cl-white;
+        color: $text-cl-dark;
+        padding: 4px 20px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        border-radius: 20px;
+        transition: $t;
+        &:hover{
+            background: $red-cl-dark;
+            color: $text-cl-light;
+        }
+    }
+}

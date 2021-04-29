@@ -1,4 +1,177 @@
 .header{
-    height: 50px;
-    background-color: $red-cl;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0%;
+    transition: $t;
+    &__scroll{
+        .header-top{
+            transition: $t;
+            height: 0;
+        }
+        .header-bottom{
+            background: $bg-cl-white;
+            padding: 2px 0;
+            transition: .3s;
+        }
+        .nav{
+            &__logo{
+                img{
+                    width: 90px;
+                }
+            }
+            &__list{
+                li{
+                    a{
+                        color: $text-cl;
+                    }
+                }
+            }
+        }
+
+    }
+    &-top{
+        height: 50px;
+        background-color: $red-cl;
+        color: $text-cl-light;
+        width: 100%;
+        overflow: hidden;
+        transition: $t;
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+        }
+        &__lang{
+            display: flex;
+            p{
+                text-transform: uppercase;
+                font-size: 12px;
+                font-family: $font-heading;
+                display: flex;
+                align-items: center;
+            }
+            a{
+                width: 30px;
+                height: 30px;
+                border: 1px solid #fff;
+                background: $bg-cl-white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $font-heading;
+                color: $text-cl-dark;
+                font-size: 12px;
+                text-transform: uppercase;
+                margin-left: 8px;
+                transition: $t;
+                &:hover{
+                    background: $red-cl-dark;
+                    color: $text-cl-light;
+                }
+            }
+        }
+        &__bright{
+            display: flex;
+            align-items: center;
+            p{
+                font-size: 16px;
+                a{
+                    color: $text-cl-light;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+        &__divide{
+            width: 1px;
+            height: 20px;
+            background: #ec626b;
+            margin: 0 10px;
+        }
+    }
+    &-bottom{
+        padding: 10px 0;
+        transition: .2s;
+        background: url(../images/overlay-for-menu.png) repeat-x center top;
+        
+    }
+}
+.nav{
+    &__list{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            margin: 0 15px;
+            overflow: hidden;
+            a{
+                font-size: 16px;
+                color: $text-cl-light;
+                position: relative;
+                text-transform: uppercase;
+                line-height: 26px;
+                transition: $t;
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                    &::after{
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                }
+                &::before{
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background: #fff;
+                    position: absolute;
+                    bottom: -4px;
+                    left: -24px;
+                    opacity: 0;
+                    transform: translateX(-50px);
+                    transition: $t;
+                }
+                &::after{
+                    content: "...";
+                    font-size: 14px;
+                    letter-spacing: 4px;
+                    position: absolute;
+                    right: -2px;
+                    bottom: -12px;
+                    opacity: 0;
+                    transform: translateX(-50px);
+                    transition-delay: .1s;
+                    transition: $t;
+                }
+            }
+        }
+    }
+    &__logo{
+        img{
+            width: 210px;
+        }
+    }
+}
+
+// current item
+.current-item{
+    a{
+        &::before{
+            transform: translateX(0px) !important;
+            opacity: 1 !important;
+        }
+        &::after{
+            transform: translateX(0px) !important;
+            opacity: 1 !important;
+        }
+    }
 }

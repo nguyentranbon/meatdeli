@@ -6,15 +6,21 @@ $red-cl-dark:#bc0814;
 /* global bg color */
 $body-bg-cl: #fff;
 $gray-bg-cl: #fafafa;
+$black-bg-cl: #111;
+
+
 
 $text-cl: #111111;
 
+$text-cl-light: #fff;
+$bg-cl-white: #fff;
+$text-cl-dark: #111111;
 // TIME TRANSITION
 $t: 0.3s;
 
 // FONT FAMILY 
-$font-family: 'Open Sans', sans-serif;
-
+$font-family: 'Myriad Pro';
+$font-heading: 'Myriad Pro';
 // GRID - media queries breakpoints
 $xss-min: 420px;
 $xs-min: 576px;

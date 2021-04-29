@@ -3,5 +3,8 @@ body{
     font-family: $font-family;
     line-height: $lh-body;
     background-color: $body-bg-cl;
-    font-size: $tex;
+    font-size: $fz-body;
+}
+.container{
+    max-width: 1230px;
 }
